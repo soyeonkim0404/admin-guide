@@ -1,34 +1,6 @@
 @import "reset.css";
-
-:root {
-  --blue: #00cfe8;
-  --indigo: #6610f2;
-  --purple: #7367f0;
-  --pink: #e83e8c;
-  --red: #ea5455;
-  --orange: #ff9f43;
-  --yellow: #ffc107;
-  --green: #28c76f;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #b8c2cc;
-  --gray-dark: #1e1e1e;
-  --primary: #7367f0;
-  --secondary: #82868b;
-  --success: #28c76f;
-  --info: #00cfe8;
-  --warning: #ff9f43;
-  --danger: #ea5455;
-  --light: #f6f6f6;
-  --dark: #4b4b4b;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1440px;
-}
+@import "root.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
   .admin-wrap {
@@ -36,7 +8,7 @@ body {
     display: flex;
     width: 100%;
     min-height: 100vh;
-    background: #f8f8f8;
+    background: var(--bs-gray-100);
     .navbar {
       border: 1px solid #ebe9f1;
       position: fixed;
