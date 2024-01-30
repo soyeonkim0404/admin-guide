@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+    <title>modal</title>
+  </head>
+  <body class="sidebar-locked">
+    <!--START :: ADMIN CONTENTS-->
+    <div class="admin-wrap">
+      <header class="header">
+        <h2 class="page-title">관리자 계정 관리</h2>
+      </header>
+      <div class="sidebar locked">
+        <div class="top">
+          <div id="lock-icon"></div>
+          <div id="sidebar-close"></div>
+        </div>
+        <div class="menus"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="contents">
+        <div class="inner">
+          <button type="button" data-modalid="#default" class="btn-modal">
+            바텀모달
+          </button>
+          <button type="button" data-modalid="#bottom" class="btn-modal">
+            모달222222
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--END :: ADMIN CONTENTS-->
+    <!--모달-->
+    <div class="modal-bottom" id="default">
+      <div class="dim"><span class="blind">모달 뒷 배경</span></div>
+      <div class="inner">
+        <div class="top">
+          <strong class="title">모달 타이틀</strong>
+          <button type="button" class="close-modal">
+            <span class="blind">close</span>
+          </button>
+        </div>
+        <div class="body">
+          <p>바텀형 모달입니다</p>
+        </div>
+        <div class="bottom">
+          <div class="btn-wrap">
+            <button type="button" class="btn-white">
+              <span>취소</span>
+            </button>
+            <button type="button" class="btn-green">
+              <span>확인</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-bottom" id="bottom">
+      <div class="dim"><span class="blind">모달 뒷 배경</span></div>
+      <div class="inner">
+        <div class="top">
+          <strong class="title">모달 타이틀</strong>
+          <button type="button" class="close-modal">
+            <span class="blind">close</span>
+          </button>
+        </div>
+        <div class="body">
+          <p>modal-testModalmodal-testModalmodal-testModalmodal-testModal</p>
+        </div>
+        <div class="bottom">
+          <div class="btn-wrap">
+            <button type="button" class="btn-white">
+              <span>취소</span>
+            </button>
+            <button type="button" class="btn-green">
+              <span>확인</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="../assets/js/common.js"></script>
+  </body>
+</html>
